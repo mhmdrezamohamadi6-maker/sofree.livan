@@ -1,2 +1,67 @@
 # sofree.livan
 بزرگترین کمپانی فروش سفره و لیوان کاغذی
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🛒 فروشگاه لیوان و سفره</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- هدر -->
+  <header>
+    <div class="logo">فروشگاه لیوان و سفره</div>
+    <nav>
+      <a href="#">خانه</a>
+      <a href="#products">محصولات</a>
+      <a href="#cart">سبد خرید</a>
+    </nav>
+  </header>
+
+  <!-- بنر -->
+  <section class="hero">
+    <h1>لیوان کاغذی و سفره پلاستیکی با بهترین کیفیت</h1>
+    <p>خرید آسان، سریع و مطمئن</p>
+    <a href="#products" class="btn">مشاهده محصولات</a>
+  </section>
+
+  <!-- محصولات -->
+  <main>
+    <section id="products">
+      <h2>محصولات ویژه</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="https://via.placeholder.com/200x200?text=لیوان+کاغذی" alt="لیوان کاغذی">
+          <h3>لیوان کاغذی</h3>
+          <p>بسته 50 عددی مقاوم</p>
+          <span class="price">50,000 تومان</span>
+          <button onclick="addToCart('لیوان کاغذی', 50000)">🛒 افزودن به سبد</button>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/200x200?text=سفره+پلاستیکی" alt="سفره پلاستیکی">
+          <h3>سفره پلاستیکی</h3>
+          <p>سفره یکبار مصرف 25 متری</p>
+          <span class="price">70,000 تومان</span>
+          <button onclick="addToCart('سفره پلاستیکی', 70000)">🛒 افزودن به سبد</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- سبد خرید -->
+  <section id="cart">
+    <h2>🛍️ سبد خرید شما</h2>
+    <ul id="cartItems"></ul>
+    <p><strong>مجموع: </strong><span id="total">0</span> تومان</p>
+    <button class="checkout">تسویه حساب</button>
+  </section>
+
+  <!-- فوتر -->
+  <footer>
+    <p>© 2025 فروشگاه لیوان و سفره | طراحی شده با ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
